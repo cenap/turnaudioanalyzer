@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&subset=latin-ext');
+
+html, body {
+  font-family: 'Muli', sans-serif;
+  height: 100%;
+}
+
+img.logo {
+  width: 100px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items : center;
+}
+
+#recorder {
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: #f1f3f5;
+  height: 45px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#recorder.active {
+  background-color: red;
+  color: white;
+}
+
+#recorder img.icon {
+  width: 16px;
+  margin-right: 8px;
+}
+
+#canvas-container {
+  flex: 1 1 100%;
+}
+
+#cnvs {
+  padding: 20px;
+  border: 1px solid #CCC;
+  margin-top: 20px;
+}
