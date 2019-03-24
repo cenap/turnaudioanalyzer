@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title>turnaudioanalyzer</title>
+  </head>
+  <body>
+    <img class="logo" src="assets/img/logo.png" />
+    <h3>turnaudioanalyzer</h3>
+
+    <div id='container'>
+      <div class='message' id='warning1'> </div>
+      <span id="recorder" onclick="toggleRecording()">
+        <img class="icon" src="assets/img/mic.png"/>
+        <span>Kayıt</span>
+      </span>
+      <audio src="assets/audio/Yolda.mp3" id="audioinput" autoplay="false" controls="true" onplay="togglePlaying()" onpause="togglePlaying()"> </audio>
+      <span class="select-container">
+        <select id="vtype" class="vtype" name="vtype" onchange="resetCanvas()">
+          <option value="0">Default (black)</option>
+          <option value="1">Red</option>
+          <option value="2">Colors</option>
+          <option value="3">Lines</option>
+          <option value="3">Wave (black)</option>
+          <option value="3">Wave (colored)</option>
+        </select>
+      </span>
+      <div id="canvas-container">
+        <canvas id="cnvs" width="500" height="300" />
+      </div>
+    </div>
+
+  </body>
+  <script src="js/turnaudioanalyzer-advanced.js" type="text/javascript"></script>
+</html>

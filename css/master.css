@@ -36,6 +36,26 @@ img.logo {
   margin-right: 8px;
 }
 
+.select-container {
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: #f1f3f5;
+  height: 45px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-container select {
+  padding: 5px;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+}
+
 #canvas-container {
   flex: 1 1 100%;
 }
