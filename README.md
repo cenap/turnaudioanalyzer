@@ -1,6 +1,6 @@
 # turnaudioanalyzer
-Inline-style:
 ![alt text](https://cenap.github.io/turnaudioanalyzer/assets/img/turnanalyzer.png "turnaudioanalyzer")
+
 A pure javascript frequency analyser/visualizer
 
 Demo1: https://cenap.github.io/turnaudioanalyzer/
