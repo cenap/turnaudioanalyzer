@@ -159,6 +159,12 @@ function visualize(data, vtype) {
 
 
 function togglePlaying() { // eslint-disable-line no-unused-vars
+  if (playerAudioContext && playerAudioContext.state === "suspended") {
+    playerAudioContext.resume().then(() => {
+      console.log('Playback resumed successfully');
+    });
+  }
+
   if (recorder && recorder.active) {
     stopRecording(recorder);
   }
@@ -169,6 +175,12 @@ function togglePlaying() { // eslint-disable-line no-unused-vars
 }
 
 function toggleRecording() { // eslint-disable-line no-unused-vars
+  if (recorderAudioContext && recorderAudioContext.state === "suspended") {
+    recorderAudioContext.resume().then(() => {
+      console.log('Recording resumed successfully');
+    });
+  }
+
   if (recorder && recorder.active) {
     stopRecording(recorder);
   } else {
